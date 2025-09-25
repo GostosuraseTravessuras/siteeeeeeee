@@ -7,19 +7,38 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #1a1a1a;
-  color: #ff7518; /* cor de abóbora */
-  line-height: 1.6;
+  background-color: #2b0030; /* roxo escuro */
+  color: #ff7518; /* laranja */
+  overflow-x: hidden;
   text-align: center;
 }
 
+/* Fundo animado */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #2b0030, #ff7518);
+  z-index: -1;
+  animation: backgroundPulse 5s infinite alternate;
+}
+
+@keyframes backgroundPulse {
+  0% { background: linear-gradient(135deg, #2b0030, #ff7518); }
+  50% { background: linear-gradient(135deg, #4b0060, #ff9933); }
+  100% { background: linear-gradient(135deg, #2b0030, #ff7518); }
+}
+
+/* Header */
 header {
   padding: 50px 20px;
-  background-color: #000;
 }
 
 header h1 {
   font-size: 3rem;
+  text-shadow: 2px 2px #ff7518;
 }
 
 header p {
@@ -27,44 +46,57 @@ header p {
   margin-top: 10px;
 }
 
-main {
-  padding: 30px 20px;
-}
-
+/* Intro */
 .intro h2 {
   font-size: 2rem;
-  margin-bottom: 10px;
+  margin: 30px 0 10px;
 }
 
-.gallery {
-  margin-top: 40px;
+.intro p {
+  font-size: 1rem;
+  margin-bottom: 40px;
 }
 
-.gallery h2 {
-  margin-bottom: 20px;
-  font-size: 2rem;
-}
-
-.gallery .images {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.gallery .images img {
-  width: 250px;
-  border: 3px solid #ff7518;
-  border-radius: 10px;
-  transition: transform 0.3s;
-}
-
-.gallery .images img:hover {
-  transform: scale(1.1) rotate(5deg);
-}
-
+/* Footer */
 footer {
   padding: 20px;
-  background-color: #000;
+  background-color: #1a001f;
   margin-top: 50px;
+}
+
+/* Morcegos animados */
+.bat-animation {
+  position: relative;
+  height: 200px;
+}
+
+.bat {
+  width: 40px;
+  height: 20px;
+  background-color: #ff7518;
+  position: absolute;
+  top: 50px;
+  border-radius: 50% 50% 0 0;
+  animation: fly 6s linear infinite;
+}
+
+.bat::before,
+.bat::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: #ff7518;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.bat::before { left: -20px; top: 0; }
+.bat::after { right: -20px; top: 0; }
+
+@keyframes fly {
+  0% { transform: translateX(-100px) translateY(0) rotate(0deg); }
+  25% { transform: translateX(200px) translateY(-30px) rotate(-20deg); }
+  50% { transform: translateX(400px) translateY(10px) rotate(10deg); }
+  75% { transform: translateX(600px) translateY(-20px) rotate(-10deg); }
+  100% { transform: translateX(100vw) translateY(0) rotate(0deg); }
 }
