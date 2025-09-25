@@ -1,11 +1,70 @@
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 50px;
-  background: #f4f4f9;
-  color: #333;
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1 {
-  color: #0066cc;
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1a1a1a;
+  color: #ff7518; /* cor de abóbora */
+  line-height: 1.6;
+  text-align: center;
+}
+
+header {
+  padding: 50px 20px;
+  background-color: #000;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+main {
+  padding: 30px 20px;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.gallery {
+  margin-top: 40px;
+}
+
+.gallery h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.gallery .images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gallery .images img {
+  width: 250px;
+  border: 3px solid #ff7518;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.gallery .images img:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+footer {
+  padding: 20px;
+  background-color: #000;
+  margin-top: 50px;
 }
