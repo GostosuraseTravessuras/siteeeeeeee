@@ -126,3 +126,11 @@ footer {
   0%, 100% { transform: scaleY(1) rotate(0deg); }
   50%      { transform: scaleY(0.7) rotate(-5deg); }
 }
+.decoracao {
+  max-width: 300px;
+  display: block;
+  margin: 20px auto;
+  border: 3px solid #ff7518;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #000;
+}
