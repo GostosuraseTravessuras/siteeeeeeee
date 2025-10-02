@@ -50,11 +50,15 @@ header p {
 .intro h2 {
   font-size: 2rem;
   margin: 30px 0 10px;
+  text-shadow: 3px 3px 6px #000; /* deixa o título mais impactante */
 }
 
 .intro p {
-  font-size: 1rem;
+  font-size: 1.2rem;       /* fonte aumentada */
+  line-height: 1.6;        /* melhor espaçamento */
   margin-bottom: 40px;
+  color: #f8e1c4;          /* cor clara, estilo pergaminho */
+  text-shadow: 2px 2px 5px #000; /* efeito sombrio */
 }
 
 /* Footer */
