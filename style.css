@@ -104,3 +104,25 @@ footer {
   75% { transform: translateX(600px) translateY(-20px) rotate(-10deg); }
   100% { transform: translateX(100vw) translateY(0) rotate(0deg); }
 }
+
+/* Morcego atravessando a tela */
+.flying-bat {
+  top: 100px;
+  left: -60px; /* começa fora da tela */
+  animation: flyAcross 12s linear infinite, flapWings 0.5s ease-in-out infinite;
+}
+
+/* Voo do morcego pela tela */
+@keyframes flyAcross {
+  0%   { transform: translateX(0) translateY(0) scale(1); opacity: 1; }
+  25%  { transform: translateX(25vw) translateY(-50px) scale(1.2); }
+  50%  { transform: translateX(50vw) translateY(30px) scale(1); }
+  75%  { transform: translateX(75vw) translateY(-40px) scale(1.3); }
+  100% { transform: translateX(100vw) translateY(0) scale(1); opacity: 0; }
+}
+
+/* Bater asas */
+@keyframes flapWings {
+  0%, 100% { transform: scaleY(1) rotate(0deg); }
+  50%      { transform: scaleY(0.7) rotate(-5deg); }
+}
