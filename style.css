@@ -51,7 +51,6 @@ header {
   flex-wrap: wrap;
 }
 
-
 /* --- TÍTULO PRINCIPAL COM EFEITO DE BRILHO --- */
 header h1 {
   font-size: 3rem;
@@ -215,4 +214,28 @@ footer {
   color: #ffd9b3;
   text-shadow: 1px 1px 4px #000;
   font-size: 1rem;
+}
+
+/* --- IMAGEM COM BORDAS DE HALLOWEEN --- */
+.intro img {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 600px;
+  height: auto;
+  border: 10px dashed orange; /* Borda laranja pontilhada */
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombrinha para efeito misterioso */
+}
+
+/* Borda com imagem personalizada de Halloween */
+.intro img {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 600px;
+  height: auto;
+  border: 15px solid transparent;
+  border-image: url('https://www.exemplo.com/borda-halloween.png') 30 stretch; /* URL de uma imagem de Halloween */
+  border-radius: 15px;
 }
