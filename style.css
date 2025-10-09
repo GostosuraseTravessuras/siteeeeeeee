@@ -163,6 +163,7 @@ a.insta-link:hover {
   top: 50px;
   border-radius: 50% 50% 0 0;
   animation: flapWings 0.5s ease-in-out infinite, fly 10s linear infinite;
+  z-index: 2; /* Garantir que o morcego tenha a prioridade sobre outros elementos */
 }
 
 /* Asas */
@@ -177,8 +178,12 @@ a.insta-link:hover {
   top: 0;
 }
 
-.bat::before { left: -20px; }
-.bat::after { right: -20px; }
+.bat::before { 
+  left: -20px; 
+}
+.bat::after { 
+  right: -20px; 
+}
 
 /* Morcego principal cruzando a tela */
 .flying-bat {
@@ -220,22 +225,10 @@ footer {
 .intro img {
   display: block;
   margin: 0 auto;
-  width: 80%;
-  max-width: 600px;
-  height: auto;
-  border: 10px dashed orange; /* Borda laranja pontilhada */
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombrinha para efeito misterioso */
-}
-
-/* Borda com imagem personalizada de Halloween */
-.intro img {
-  display: block;
-  margin: 0 auto;
-  width: 80%;
-  max-width: 600px;
-  height: auto;
+  width: 100%; /* Garantir que a imagem ocupe 100% da largura do container */
+  max-width: 600px; /* Limite máximo de largura */
+  height: auto; /* Altura proporcional */
   border: 15px solid transparent;
-  border-image: url('https://www.exemplo.com/borda-halloween.png') 30 stretch; /* URL de uma imagem de Halloween */
+  border-image: url('https://www.dropbox.com/scl/fi/ot3nv1qfhukhw3ot7q4ny/convite.jpeg?rlkey=g0r9vm67rmvv7zq7hllq20wda&st=0h0j7soi&dl=1') 30 stretch; /* URL da imagem do convite para a borda */
   border-radius: 15px;
 }
