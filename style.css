@@ -221,7 +221,7 @@ footer {
   font-size: 1rem;
 }
 
-/* --- IMAGEM COM BORDAS DE HALLOWEEN E MOVIMENTO --- */
+/* --- IMAGEM COM BORDAS DE HALLOWEEN --- */
 .intro img {
   display: block;
   margin: 0 auto;
@@ -231,4 +231,4 @@ footer {
   border: 15px solid transparent;
   border-image: url('https://www.dropbox.com/scl/fi/ot3nv1qfhukhw3ot7q4ny/convite.jpeg?rlkey=g0r9vm67rmvv7zq7hllq20wda&st=0h0j7soi&dl=1') 30 stretch; /* URL da imagem do convite para a borda */
   border-radius: 15px;
-  animation:
+}
