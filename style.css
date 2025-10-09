@@ -77,9 +77,9 @@ header h1 {
 /* --- IMAGEM COM BORDAS DE HALLOWEEN E MOVIMENTO --- */
 .intro img {
   display: block;
-  margin: 0 auto;
-  width: 100%; /* Garantir que a imagem ocupe 100% da largura do container */
-  max-width: 600px; /* Limite máximo de largura */
+  margin: 20px auto;
+  width: 90%; /* Ajustado para ocupar 90% da largura */
+  max-width: 500px; /* Limite máximo de largura */
   height: auto; /* Altura proporcional */
   border: 15px solid transparent;
   border-image: url('https://www.dropbox.com/scl/fi/ot3nv1qfhukhw3ot7q4ny/convite.jpeg?rlkey=g0r9vm67rmvv7zq7hllq20wda&st=0h0j7soi&dl=1') 30 stretch; /* URL da imagem do convite para a borda */
@@ -126,6 +126,42 @@ header h1 {
   }
   100% {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* --- LINK DO INSTAGRAM COM ANIMAÇÃO --- */
+a.insta-link {
+  display: inline-block;
+  background-color: #ff7518;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 10px #ff6600;
+  transition: 0.3s ease-in-out;
+  animation: pulseLink 2s ease-in-out infinite alternate; /* Animação no link */
+}
+
+a.insta-link:hover {
+  background-color: #a64dff;
+  box-shadow: 0 0 20px #a64dff;
+  transform: scale(1.1);
+}
+
+/* Efeito de pulsação no link */
+@keyframes pulseLink {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 15px #ff7518;
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #ff9933;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 15px #ff7518;
   }
 }
 
