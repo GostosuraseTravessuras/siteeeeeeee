@@ -93,7 +93,7 @@ header h1 {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px); /* Leve flutuação para cima */
+    transform: translateY(-15px); /* Leve flutuação para cima */
   }
   100% {
     transform: translateY(0);
@@ -103,15 +103,15 @@ header h1 {
 /* Efeito de brilho sutil (brilho intermitente) */
 @keyframes glow {
   0% {
-    box-shadow: 0 0 10px #ff7518, 0 0 20px #ff9933;
+    box-shadow: 0 0 15px #ff7518, 0 0 25px #ff9933;
     transform: scale(1);
   }
   50% {
-    box-shadow: 0 0 30px #a64dff, 0 0 60px #ff9933;
+    box-shadow: 0 0 35px #a64dff, 0 0 60px #ff9933;
     transform: scale(1.05);
   }
   100% {
-    box-shadow: 0 0 10px #ff7518, 0 0 20px #ff9933;
+    box-shadow: 0 0 15px #ff7518, 0 0 25px #ff9933;
     transform: scale(1);
   }
 }
@@ -119,13 +119,13 @@ header h1 {
 /* Efeito de sombra fantasmagórica (sombra suave e esvoaçante) */
 @keyframes shadowGhost {
   0% {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   }
   50% {
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
   }
   100% {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   }
 }
 
