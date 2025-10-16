@@ -232,3 +232,25 @@ footer {
   border-image: url('https://www.dropbox.com/scl/fi/ot3nv1qfhukhw3ot7q4ny/convite.jpeg?rlkey=g0r9vm67rmvv7zq7hllq20wda&st=0h0j7soi&dl=1') 30 stretch; /* URL da imagem do convite para a borda */
   border-radius: 15px;
 }
+/* --- LINK DO FORMULÁRIO (Google Forms) --- */
+.form-link {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 3px solid #800080; /* Roxo escuro */
+  border-radius: 10px;
+  color: #FFA500; /* Laranja */
+  text-decoration: none;
+  font-weight: bold;
+  background-color: transparent;
+  font-size: 1.1rem;
+  box-shadow: 0 0 10px #800080;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.form-link:hover {
+  background-color: #FFA500; /* Fundo laranja */
+  color: #800080; /* Texto roxo */
+  border-color: #FFA500;
+  box-shadow: 0 0 15px #FFA500;
+  transform: scale(1.05);
+}
